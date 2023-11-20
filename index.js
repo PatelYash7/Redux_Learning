@@ -63,6 +63,7 @@ const unsubscribe = store.subscribe(()=> console.log("Updated State", store.getS
 store.dispatch(buyCake()) // here we are passing the Action creater which returns the action
 store.dispatch(buyCake()) // here we can directly pass the Action object { }, but it is preferably to pass creator function
 store.dispatch(buyCake())
+console.log(store.getState()) 
 store.dispatch(buyCake())
 
 
