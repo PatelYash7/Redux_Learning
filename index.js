@@ -58,7 +58,8 @@ const unsubscribe = store.subscribe(()=> console.log("Updated State", store.getS
 
 
 //3 
-// dispatch take the action  and pass it to reducer which updates the state 
+
+// Action is passed to Reducer with the help of Dispatcher  
 
 store.dispatch(buyCake()) // here we are passing the Action creater which returns the action
 store.dispatch(buyCake()) // here we can directly pass the Action object { }, but it is preferably to pass creator function
